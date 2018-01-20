@@ -1,0 +1,17 @@
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="password"] {
+	@include fontSize(18px);
+	padding: 3px 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	width: 15em;
+ }

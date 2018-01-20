@@ -1,5 +1,32 @@
+@import 'mixins/mixins';
+@import 'color';
+@import 'typography';
+@import 'forms';
+@import 'style-guide/main';
+@import 'button';
+
 body {
+	@include fontSize(18px);
+	font-family: $baseFontFamily;
 	background-color: #FAFAFA;
+	max-width: 90%;
+	margin: 0 auto;
 }
 
-@import 'color';
+a {
+	color: $color-water;
+	text-decoration: none;
+	border-bottom: 1px dotted currentColor;
+	&:hover {
+		color: $color-steam;
+	}
+}
+
+.secondary a {
+	color: currentColor;
+	text-decoration: none;
+	border-bottom: 1px dotted currentColor;
+	&:hover {
+		color: $color-water;
+	}
+}

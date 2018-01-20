@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+$baseFontFamily:  "Helvetica Neue", Helvetica, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+$alternativeFontFamily: 'Rock Salt', sans-serif;
+
+h1 { @include fontSize(48px); }
+h2 { @include fontSize(40px); }
+h3 { @include fontSize(32px); }
+h4 { @include fontSize(24px); }
+h5 { @include fontSize(20px); }
+h6 { @include fontSize(18px); }
+p { @include fontSize(18px); }
+
+h1 + h2.secondary,
+h2 + h3.secondary,
+h3 + h4.secondary,
+h4 + h5.secondary,
+h5 + h6.secondary {
+	margin-top: 0;
+}
+
+ul,
+ol {
+	padding-left: 32px;
+	li {
+		@include fontSize(18px);
+		line-height: 24px;
+	}
+}
+
+blockquote {
+	@include fontSize(40px);
+	line-height: 40px + 20px;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	font-family: $alternativeFontFamily;
+}

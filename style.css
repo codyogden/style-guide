@@ -1,24 +1,2341 @@
-body {
-  background-color: #FAFAFA; }
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt");
+.water {
+  background-color: #1f8dd6;
+  color: white; }
 
-#color {
+.grass {
+  background-color: #54a654;
+  color: white; }
+
+.grape {
+  background-color: #8064a2;
+  color: white; }
+
+.chocolate {
+  background-color: #4f2902;
+  color: white; }
+
+.apple {
+  background-color: #ce393b;
+  color: white; }
+
+.clementine {
+  background-color: #e26812;
+  color: white; }
+
+.sunflower {
+  background-color: #f2b809;
+  color: #202020; }
+
+.gunmetal {
+  background-color: #807672;
+  color: white; }
+
+.white {
+  background-color: white;
+  color: black; }
+
+.cloud {
+  background-color: #fafafa;
+  color: black; }
+
+.mist {
+  background-color: #ededed;
+  color: black; }
+
+.fog {
+  background-color: #999999;
+  color: black; }
+
+.steam {
+  background-color: #666666;
+  color: white; }
+
+.smoke {
+  background-color: #333333;
+  color: white; }
+
+.night {
+  background-color: #202020;
+  color: white; }
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  margin: 0.5em 0 0 0; }
+  h1.primary {
+    color: #000000; }
+  h1.secondary, h1.sub-title {
+    color: #666666; }
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0.5em 0 0 0; }
+  h2.primary {
+    color: #000000; }
+  h2.secondary, h2.sub-title {
+    color: #666666; }
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0.5em 0 0 0; }
+  h3.primary {
+    color: #000000; }
+  h3.secondary, h3.sub-title {
+    color: #666666; }
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0.5em 0 0 0; }
+  h4.primary {
+    color: #000000; }
+  h4.secondary, h4.sub-title {
+    color: #666666; }
+
+h5 {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0.5em 0 0 0; }
+  h5.primary {
+    color: #000000; }
+  h5.secondary, h5.sub-title {
+    color: #666666; }
+
+h6 {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0.5em 0 0 0; }
+  h6.primary {
+    color: #000000; }
+  h6.secondary, h6.sub-title {
+    color: #666666; }
+
+p {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0.5em 0 0 0; }
+  p.primary {
+    color: #000000; }
+  p.secondary, p.sub-title {
+    color: #666666; }
+
+h1 + h2.secondary,
+h2 + h3.secondary,
+h3 + h4.secondary,
+h4 + h5.secondary,
+h5 + h6.secondary {
+  margin-top: 0; }
+
+ul,
+ol {
+  padding-left: 32px; }
+  ul li,
+  ol li {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0.5em 0 0 0;
+    line-height: 24px; }
+    ul li.primary,
+    ol li.primary {
+      color: #000000; }
+    ul li.secondary, ul li.sub-title,
+    ol li.secondary,
+    ol li.sub-title {
+      color: #666666; }
+
+blockquote {
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0.5em 0 0 0;
+  line-height: 60px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-family: "Rock Salt", sans-serif; }
+  blockquote.primary {
+    color: #000000; }
+  blockquote.secondary, blockquote.sub-title {
+    color: #666666; }
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="password"] {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0.5em 0 0 0;
+  padding: 3px 5px; }
+  input[type="text"].primary,
+  input[type="email"].primary,
+  input[type="number"].primary,
+  input[type="date"].primary,
+  input[type="time"].primary,
+  input[type="datetime-local"].primary,
+  input[type="month"].primary,
+  input[type="password"].primary {
+    color: #000000; }
+  input[type="text"].secondary, input[type="text"].sub-title,
+  input[type="email"].secondary,
+  input[type="email"].sub-title,
+  input[type="number"].secondary,
+  input[type="number"].sub-title,
+  input[type="date"].secondary,
+  input[type="date"].sub-title,
+  input[type="time"].secondary,
+  input[type="time"].sub-title,
+  input[type="datetime-local"].secondary,
+  input[type="datetime-local"].sub-title,
+  input[type="month"].secondary,
+  input[type="month"].sub-title,
+  input[type="password"].secondary,
+  input[type="password"].sub-title {
+    color: #666666; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 15em; }
+
+div.color-cards {
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: space-between;
   flex-flow: row wrap; }
-  #color .color-card {
-    flex: 1 0 20%;
-    min-width: 225px;
-    box-sizing: border-box;
-    background-color: #FFF;
-    margin: 10px 10px;
+
+.color-card {
+  flex: 1 0 22.5%;
+  margin: 10px 1.25%;
+  border-radius: 5px;
+  font-size: 0.8em;
+  min-width: 180px; }
+  .color-card .wrapper {
     padding-bottom: 10px;
+    background-color: #FFF;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
     box-shadow: 0px 0px 0px 1px rgba(51, 51, 51, 0.1); }
-    #color .color-card .swatch {
-      width: 100%;
-      height: 140px; }
-    #color .color-card h3,
-    #color .color-card table {
-      padding: 0 10px; }
+  .color-card .swatch {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ededed;
+    box-sizing: border-box;
+    transition: height 50ms linear; }
+  .color-card h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0.5em 0 0 0;
+    padding: 0 10px; }
+    .color-card h3.primary {
+      color: #000000; }
+    .color-card h3.secondary, .color-card h3.sub-title {
+      color: #666666; }
+  .color-card table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    line-height: 1.25em;
+    color: #666666; }
+    .color-card table tr {
+      display: flex;
+      align-items: center; }
+    .color-card table tr th {
+      padding: 2px 10px 0 10px; }
+    .color-card table tr td {
+      padding: 3px 0 0 0; }
+
+.text-size-table {
+  border-collapse: collapse;
+  text-align: left; }
+  .text-size-table h1, .text-size-table h2, .text-size-table h3, .text-size-table h4, .text-size-table h5, .text-size-table h6 {
+    margin: 0; }
+  .text-size-table tr {
+    display: flex;
+    align-items: center; }
+    .text-size-table tr th {
+      min-width: 175px;
+      text-align: left;
+      text-transform: uppercase; }
+      .text-size-table tr th + td {
+        text-align: left;
+        width: 125px;
+        padding: 0; }
+        .text-size-table tr th + td + td {
+          padding-left: 20px; }
+  .text-size-table th, .text-size-table td {
+    padding: 15px 0; }
+
+@media screen and (max-width: 900px) {
+  .text-size-table {
+    border-collapse: collapse;
+    text-align: left; }
+    .text-size-table h1, .text-size-table h2, .text-size-table h3, .text-size-table h4, .text-size-table h5, .text-size-table h6 {
+      margin: 0; }
+    .text-size-table tr {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      padding: 20px 0; }
+      .text-size-table tr th {
+        min-width: 175px;
+        text-align: left;
+        text-transform: uppercase; }
+        .text-size-table tr th + td {
+          text-align: left;
+          width: 125px;
+          padding: 0; }
+          .text-size-table tr th + td + td {
+            padding-left: 0px; }
+    .text-size-table th, .text-size-table td {
+      padding: 0; } }
+input[type="button"].btn,
+input[type="submit"].btn,
+button.btn,
+a.btn {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0.5em 0 0 0;
+  padding: 5px 2em;
+  border: none;
+  border-radius: 3px;
+  background-color: #ededed;
+  color: black;
+  border: 1px solid transparent; }
+  input[type="button"].btn.primary,
+  input[type="submit"].btn.primary,
+  button.btn.primary,
+  a.btn.primary {
+    color: #000000; }
+  input[type="button"].btn.secondary, input[type="button"].btn.sub-title,
+  input[type="submit"].btn.secondary,
+  input[type="submit"].btn.sub-title,
+  button.btn.secondary,
+  button.btn.sub-title,
+  a.btn.secondary,
+  a.btn.sub-title {
+    color: #666666; }
+  input[type="button"].btn:disabled,
+  input[type="submit"].btn:disabled,
+  button.btn:disabled,
+  a.btn:disabled {
+    background-color: #ededed;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed; }
+    input[type="button"].btn:disabled:hover,
+    input[type="submit"].btn:disabled:hover,
+    button.btn:disabled:hover,
+    a.btn:disabled:hover {
+      background-color: #ededed;
+      color: rgba(0, 0, 0, 0.3);
+      transition: background-color 150ms linear; }
+  input[type="button"].btn:hover,
+  input[type="submit"].btn:hover,
+  button.btn:hover,
+  a.btn:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0; }
+  input[type="button"].btn:active,
+  input[type="submit"].btn:active,
+  button.btn:active,
+  a.btn:active {
+    background-color: #ededed;
+    border: 1px solid #ededed; }
+  input[type="button"].btn.ghost:not(:disabled),
+  input[type="submit"].btn.ghost:not(:disabled),
+  button.btn.ghost:not(:disabled),
+  a.btn.ghost:not(:disabled) {
+    box-sizing: border-box;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black; }
+    input[type="button"].btn.ghost:not(:disabled):hover,
+    input[type="submit"].btn.ghost:not(:disabled):hover,
+    button.btn.ghost:not(:disabled):hover,
+    a.btn.ghost:not(:disabled):hover {
+      background-color: black;
+      color: white;
+      transition: background-color 150ms linear; }
+  input[type="button"].btn.water,
+  input[type="submit"].btn.water,
+  button.btn.water,
+  a.btn.water {
+    background-color: #1f8dd6;
+    color: white;
+    border: 1px solid #1f8dd6; }
+    input[type="button"].btn.water:hover,
+    input[type="submit"].btn.water:hover,
+    button.btn.water:hover,
+    a.btn.water:hover {
+      background-color: #1c7ec0;
+      border: 1px solid #1c7ec0; }
+    input[type="button"].btn.water:active,
+    input[type="submit"].btn.water:active,
+    button.btn.water:active,
+    a.btn.water:active {
+      background-color: #1f8dd6;
+      border: 1px solid #1f8dd6; }
+    input[type="button"].btn.water:disabled,
+    input[type="submit"].btn.water:disabled,
+    button.btn.water:disabled,
+    a.btn.water:disabled {
+      background-color: #86bde2;
+      color: #1f8dd6;
+      border: 1px solid #86bde2; }
+      input[type="button"].btn.water:disabled:hover,
+      input[type="submit"].btn.water:disabled:hover,
+      button.btn.water:disabled:hover,
+      a.btn.water:disabled:hover {
+        background-color: #86bde2;
+        color: #1f8dd6;
+        border: 1px solid #86bde2; }
+    input[type="button"].btn.water.ghost:not(:disabled),
+    input[type="submit"].btn.water.ghost:not(:disabled),
+    button.btn.water.ghost:not(:disabled),
+    a.btn.water.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #1f8dd6;
+      border: 1px solid #1f8dd6; }
+      input[type="button"].btn.water.ghost:not(:disabled):hover,
+      input[type="submit"].btn.water.ghost:not(:disabled):hover,
+      button.btn.water.ghost:not(:disabled):hover,
+      a.btn.water.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #1c7ec0;
+        color: white;
+        border-color: #1c7ec0; }
+      input[type="button"].btn.water.ghost:not(:disabled):active,
+      input[type="submit"].btn.water.ghost:not(:disabled):active,
+      button.btn.water.ghost:not(:disabled):active,
+      a.btn.water.ghost:not(:disabled):active {
+        background-color: #1f8dd6;
+        border: 1px solid #1f8dd6; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.water.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.water.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.water.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.water.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.grass,
+  input[type="submit"].btn.grass,
+  button.btn.grass,
+  a.btn.grass {
+    background-color: #54a654;
+    color: white;
+    border: 1px solid #54a654; }
+    input[type="button"].btn.grass:hover,
+    input[type="submit"].btn.grass:hover,
+    button.btn.grass:hover,
+    a.btn.grass:hover {
+      background-color: #4b954b;
+      border: 1px solid #4b954b; }
+    input[type="button"].btn.grass:active,
+    input[type="submit"].btn.grass:active,
+    button.btn.grass:active,
+    a.btn.grass:active {
+      background-color: #54a654;
+      border: 1px solid #54a654; }
+    input[type="button"].btn.grass:disabled,
+    input[type="submit"].btn.grass:disabled,
+    button.btn.grass:disabled,
+    a.btn.grass:disabled {
+      background-color: #a1caa1;
+      color: #54a654;
+      border: 1px solid #a1caa1; }
+      input[type="button"].btn.grass:disabled:hover,
+      input[type="submit"].btn.grass:disabled:hover,
+      button.btn.grass:disabled:hover,
+      a.btn.grass:disabled:hover {
+        background-color: #a1caa1;
+        color: #54a654;
+        border: 1px solid #a1caa1; }
+    input[type="button"].btn.grass.ghost:not(:disabled),
+    input[type="submit"].btn.grass.ghost:not(:disabled),
+    button.btn.grass.ghost:not(:disabled),
+    a.btn.grass.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #54a654;
+      border: 1px solid #54a654; }
+      input[type="button"].btn.grass.ghost:not(:disabled):hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled):hover,
+      button.btn.grass.ghost:not(:disabled):hover,
+      a.btn.grass.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #4b954b;
+        color: white;
+        border-color: #4b954b; }
+      input[type="button"].btn.grass.ghost:not(:disabled):active,
+      input[type="submit"].btn.grass.ghost:not(:disabled):active,
+      button.btn.grass.ghost:not(:disabled):active,
+      a.btn.grass.ghost:not(:disabled):active {
+        background-color: #54a654;
+        border: 1px solid #54a654; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.grass.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.grass.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.grass.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.grass.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.grape,
+  input[type="submit"].btn.grape,
+  button.btn.grape,
+  a.btn.grape {
+    background-color: #8064a2;
+    color: white;
+    border: 1px solid #8064a2; }
+    input[type="button"].btn.grape:hover,
+    input[type="submit"].btn.grape:hover,
+    button.btn.grape:hover,
+    a.btn.grape:hover {
+      background-color: #735994;
+      border: 1px solid #735994; }
+    input[type="button"].btn.grape:active,
+    input[type="submit"].btn.grape:active,
+    button.btn.grape:active,
+    a.btn.grape:active {
+      background-color: #8064a2;
+      border: 1px solid #8064a2; }
+    input[type="button"].btn.grape:disabled,
+    input[type="submit"].btn.grape:disabled,
+    button.btn.grape:disabled,
+    a.btn.grape:disabled {
+      background-color: #b7a9c8;
+      color: #8064a2;
+      border: 1px solid #b7a9c8; }
+      input[type="button"].btn.grape:disabled:hover,
+      input[type="submit"].btn.grape:disabled:hover,
+      button.btn.grape:disabled:hover,
+      a.btn.grape:disabled:hover {
+        background-color: #b7a9c8;
+        color: #8064a2;
+        border: 1px solid #b7a9c8; }
+    input[type="button"].btn.grape.ghost:not(:disabled),
+    input[type="submit"].btn.grape.ghost:not(:disabled),
+    button.btn.grape.ghost:not(:disabled),
+    a.btn.grape.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #8064a2;
+      border: 1px solid #8064a2; }
+      input[type="button"].btn.grape.ghost:not(:disabled):hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled):hover,
+      button.btn.grape.ghost:not(:disabled):hover,
+      a.btn.grape.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #735994;
+        color: white;
+        border-color: #735994; }
+      input[type="button"].btn.grape.ghost:not(:disabled):active,
+      input[type="submit"].btn.grape.ghost:not(:disabled):active,
+      button.btn.grape.ghost:not(:disabled):active,
+      a.btn.grape.ghost:not(:disabled):active {
+        background-color: #8064a2;
+        border: 1px solid #8064a2; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.grape.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.grape.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.grape.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.grape.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.chocolate,
+  input[type="submit"].btn.chocolate,
+  button.btn.chocolate,
+  a.btn.chocolate {
+    background-color: #4f2902;
+    color: white;
+    border: 1px solid #4f2902; }
+    input[type="button"].btn.chocolate:hover,
+    input[type="submit"].btn.chocolate:hover,
+    button.btn.chocolate:hover,
+    a.btn.chocolate:hover {
+      background-color: #361c01;
+      border: 1px solid #361c01; }
+    input[type="button"].btn.chocolate:active,
+    input[type="submit"].btn.chocolate:active,
+    button.btn.chocolate:active,
+    a.btn.chocolate:active {
+      background-color: #4f2902;
+      border: 1px solid #4f2902; }
+    input[type="button"].btn.chocolate:disabled,
+    input[type="submit"].btn.chocolate:disabled,
+    button.btn.chocolate:disabled,
+    a.btn.chocolate:disabled {
+      background-color: #9e8b78;
+      color: #4f2902;
+      border: 1px solid #9e8b78; }
+      input[type="button"].btn.chocolate:disabled:hover,
+      input[type="submit"].btn.chocolate:disabled:hover,
+      button.btn.chocolate:disabled:hover,
+      a.btn.chocolate:disabled:hover {
+        background-color: #9e8b78;
+        color: #4f2902;
+        border: 1px solid #9e8b78; }
+    input[type="button"].btn.chocolate.ghost:not(:disabled),
+    input[type="submit"].btn.chocolate.ghost:not(:disabled),
+    button.btn.chocolate.ghost:not(:disabled),
+    a.btn.chocolate.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #4f2902;
+      border: 1px solid #4f2902; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled):hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled):hover,
+      button.btn.chocolate.ghost:not(:disabled):hover,
+      a.btn.chocolate.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #361c01;
+        color: white;
+        border-color: #361c01; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled):active,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled):active,
+      button.btn.chocolate.ghost:not(:disabled):active,
+      a.btn.chocolate.ghost:not(:disabled):active {
+        background-color: #4f2902;
+        border: 1px solid #4f2902; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.chocolate.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.chocolate.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.chocolate.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.chocolate.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.apple,
+  input[type="submit"].btn.apple,
+  button.btn.apple,
+  a.btn.apple {
+    background-color: #ce393b;
+    color: white;
+    border: 1px solid #ce393b; }
+    input[type="button"].btn.apple:hover,
+    input[type="submit"].btn.apple:hover,
+    button.btn.apple:hover,
+    a.btn.apple:hover {
+      background-color: #be2f31;
+      border: 1px solid #be2f31; }
+    input[type="button"].btn.apple:active,
+    input[type="submit"].btn.apple:active,
+    button.btn.apple:active,
+    a.btn.apple:active {
+      background-color: #ce393b;
+      border: 1px solid #ce393b; }
+    input[type="button"].btn.apple:disabled,
+    input[type="submit"].btn.apple:disabled,
+    button.btn.apple:disabled,
+    a.btn.apple:disabled {
+      background-color: #de9394;
+      color: #ce393b;
+      border: 1px solid #de9394; }
+      input[type="button"].btn.apple:disabled:hover,
+      input[type="submit"].btn.apple:disabled:hover,
+      button.btn.apple:disabled:hover,
+      a.btn.apple:disabled:hover {
+        background-color: #de9394;
+        color: #ce393b;
+        border: 1px solid #de9394; }
+    input[type="button"].btn.apple.ghost:not(:disabled),
+    input[type="submit"].btn.apple.ghost:not(:disabled),
+    button.btn.apple.ghost:not(:disabled),
+    a.btn.apple.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #ce393b;
+      border: 1px solid #ce393b; }
+      input[type="button"].btn.apple.ghost:not(:disabled):hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled):hover,
+      button.btn.apple.ghost:not(:disabled):hover,
+      a.btn.apple.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #be2f31;
+        color: white;
+        border-color: #be2f31; }
+      input[type="button"].btn.apple.ghost:not(:disabled):active,
+      input[type="submit"].btn.apple.ghost:not(:disabled):active,
+      button.btn.apple.ghost:not(:disabled):active,
+      a.btn.apple.ghost:not(:disabled):active {
+        background-color: #ce393b;
+        border: 1px solid #ce393b; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.apple.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.apple.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.apple.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.apple.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.clementine,
+  input[type="submit"].btn.clementine,
+  button.btn.clementine,
+  a.btn.clementine {
+    background-color: #e26812;
+    color: white;
+    border: 1px solid #e26812; }
+    input[type="button"].btn.clementine:hover,
+    input[type="submit"].btn.clementine:hover,
+    button.btn.clementine:hover,
+    a.btn.clementine:hover {
+      background-color: #ca5d10;
+      border: 1px solid #ca5d10; }
+    input[type="button"].btn.clementine:active,
+    input[type="submit"].btn.clementine:active,
+    button.btn.clementine:active,
+    a.btn.clementine:active {
+      background-color: #e26812;
+      border: 1px solid #e26812; }
+    input[type="button"].btn.clementine:disabled,
+    input[type="submit"].btn.clementine:disabled,
+    button.btn.clementine:disabled,
+    a.btn.clementine:disabled {
+      background-color: #e8ab80;
+      color: #e26812;
+      border: 1px solid #e8ab80; }
+      input[type="button"].btn.clementine:disabled:hover,
+      input[type="submit"].btn.clementine:disabled:hover,
+      button.btn.clementine:disabled:hover,
+      a.btn.clementine:disabled:hover {
+        background-color: #e8ab80;
+        color: #e26812;
+        border: 1px solid #e8ab80; }
+    input[type="button"].btn.clementine.ghost:not(:disabled),
+    input[type="submit"].btn.clementine.ghost:not(:disabled),
+    button.btn.clementine.ghost:not(:disabled),
+    a.btn.clementine.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #e26812;
+      border: 1px solid #e26812; }
+      input[type="button"].btn.clementine.ghost:not(:disabled):hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled):hover,
+      button.btn.clementine.ghost:not(:disabled):hover,
+      a.btn.clementine.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #ca5d10;
+        color: white;
+        border-color: #ca5d10; }
+      input[type="button"].btn.clementine.ghost:not(:disabled):active,
+      input[type="submit"].btn.clementine.ghost:not(:disabled):active,
+      button.btn.clementine.ghost:not(:disabled):active,
+      a.btn.clementine.ghost:not(:disabled):active {
+        background-color: #e26812;
+        border: 1px solid #e26812; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.clementine.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.clementine.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.clementine.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.clementine.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.sunflower,
+  input[type="submit"].btn.sunflower,
+  button.btn.sunflower,
+  a.btn.sunflower {
+    background-color: #f2b809;
+    color: #202020;
+    border: 1px solid #f2b809; }
+    input[type="button"].btn.sunflower:hover,
+    input[type="submit"].btn.sunflower:hover,
+    button.btn.sunflower:hover,
+    a.btn.sunflower:hover {
+      background-color: #d9a508;
+      border: 1px solid #d9a508; }
+    input[type="button"].btn.sunflower:active,
+    input[type="submit"].btn.sunflower:active,
+    button.btn.sunflower:active,
+    a.btn.sunflower:active {
+      background-color: #f2b809;
+      border: 1px solid #f2b809; }
+    input[type="button"].btn.sunflower:disabled,
+    input[type="submit"].btn.sunflower:disabled,
+    button.btn.sunflower:disabled,
+    a.btn.sunflower:disabled {
+      background-color: #f0d37b;
+      color: #f2b809;
+      border: 1px solid #f0d37b; }
+      input[type="button"].btn.sunflower:disabled:hover,
+      input[type="submit"].btn.sunflower:disabled:hover,
+      button.btn.sunflower:disabled:hover,
+      a.btn.sunflower:disabled:hover {
+        background-color: #f0d37b;
+        color: #f2b809;
+        border: 1px solid #f0d37b; }
+    input[type="button"].btn.sunflower.ghost:not(:disabled),
+    input[type="submit"].btn.sunflower.ghost:not(:disabled),
+    button.btn.sunflower.ghost:not(:disabled),
+    a.btn.sunflower.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #f2b809;
+      border: 1px solid #f2b809; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled):hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled):hover,
+      button.btn.sunflower.ghost:not(:disabled):hover,
+      a.btn.sunflower.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #d9a508;
+        color: #202020;
+        border-color: #d9a508; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled):active,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled):active,
+      button.btn.sunflower.ghost:not(:disabled):active,
+      a.btn.sunflower.ghost:not(:disabled):active {
+        background-color: #f2b809;
+        border: 1px solid #f2b809; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.sunflower.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.sunflower.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.sunflower.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.sunflower.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.gunmetal,
+  input[type="submit"].btn.gunmetal,
+  button.btn.gunmetal,
+  a.btn.gunmetal {
+    background-color: #807672;
+    color: white;
+    border: 1px solid #807672; }
+    input[type="button"].btn.gunmetal:hover,
+    input[type="submit"].btn.gunmetal:hover,
+    button.btn.gunmetal:hover,
+    a.btn.gunmetal:hover {
+      background-color: #736a66;
+      border: 1px solid #736a66; }
+    input[type="button"].btn.gunmetal:active,
+    input[type="submit"].btn.gunmetal:active,
+    button.btn.gunmetal:active,
+    a.btn.gunmetal:active {
+      background-color: #807672;
+      border: 1px solid #807672; }
+    input[type="button"].btn.gunmetal:disabled,
+    input[type="submit"].btn.gunmetal:disabled,
+    button.btn.gunmetal:disabled,
+    a.btn.gunmetal:disabled {
+      background-color: #b7b2b0;
+      color: #807672;
+      border: 1px solid #b7b2b0; }
+      input[type="button"].btn.gunmetal:disabled:hover,
+      input[type="submit"].btn.gunmetal:disabled:hover,
+      button.btn.gunmetal:disabled:hover,
+      a.btn.gunmetal:disabled:hover {
+        background-color: #b7b2b0;
+        color: #807672;
+        border: 1px solid #b7b2b0; }
+    input[type="button"].btn.gunmetal.ghost:not(:disabled),
+    input[type="submit"].btn.gunmetal.ghost:not(:disabled),
+    button.btn.gunmetal.ghost:not(:disabled),
+    a.btn.gunmetal.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #807672;
+      border: 1px solid #807672; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled):hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled):hover,
+      button.btn.gunmetal.ghost:not(:disabled):hover,
+      a.btn.gunmetal.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #736a66;
+        color: white;
+        border-color: #736a66; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled):active,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled):active,
+      button.btn.gunmetal.ghost:not(:disabled):active,
+      a.btn.gunmetal.ghost:not(:disabled):active {
+        background-color: #807672;
+        border: 1px solid #807672; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.gunmetal.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.gunmetal.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.gunmetal.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.gunmetal.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.white,
+  input[type="submit"].btn.white,
+  button.btn.white,
+  a.btn.white {
+    background-color: white;
+    color: black;
+    border: 1px solid white; }
+    input[type="button"].btn.white:hover,
+    input[type="submit"].btn.white:hover,
+    button.btn.white:hover,
+    a.btn.white:hover {
+      background-color: #f2f2f2;
+      border: 1px solid #f2f2f2; }
+    input[type="button"].btn.white:active,
+    input[type="submit"].btn.white:active,
+    button.btn.white:active,
+    a.btn.white:active {
+      background-color: white;
+      border: 1px solid white; }
+    input[type="button"].btn.white:disabled,
+    input[type="submit"].btn.white:disabled,
+    button.btn.white:disabled,
+    a.btn.white:disabled {
+      background-color: #f6f6f6;
+      color: white;
+      border: 1px solid #f6f6f6; }
+      input[type="button"].btn.white:disabled:hover,
+      input[type="submit"].btn.white:disabled:hover,
+      button.btn.white:disabled:hover,
+      a.btn.white:disabled:hover {
+        background-color: #f6f6f6;
+        color: white;
+        border: 1px solid #f6f6f6; }
+    input[type="button"].btn.white.ghost:not(:disabled),
+    input[type="submit"].btn.white.ghost:not(:disabled),
+    button.btn.white.ghost:not(:disabled),
+    a.btn.white.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white; }
+      input[type="button"].btn.white.ghost:not(:disabled):hover,
+      input[type="submit"].btn.white.ghost:not(:disabled):hover,
+      button.btn.white.ghost:not(:disabled):hover,
+      a.btn.white.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #f2f2f2;
+        color: black;
+        border-color: #f2f2f2; }
+      input[type="button"].btn.white.ghost:not(:disabled):active,
+      input[type="submit"].btn.white.ghost:not(:disabled):active,
+      button.btn.white.ghost:not(:disabled):active,
+      a.btn.white.ghost:not(:disabled):active {
+        background-color: white;
+        border: 1px solid white; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.white.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.white.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.white.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.white.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.cloud,
+  input[type="submit"].btn.cloud,
+  button.btn.cloud,
+  a.btn.cloud {
+    background-color: #fafafa;
+    color: black;
+    border: 1px solid #fafafa; }
+    input[type="button"].btn.cloud:hover,
+    input[type="submit"].btn.cloud:hover,
+    button.btn.cloud:hover,
+    a.btn.cloud:hover {
+      background-color: #ededed;
+      border: 1px solid #ededed; }
+    input[type="button"].btn.cloud:active,
+    input[type="submit"].btn.cloud:active,
+    button.btn.cloud:active,
+    a.btn.cloud:active {
+      background-color: #fafafa;
+      border: 1px solid #fafafa; }
+    input[type="button"].btn.cloud:disabled,
+    input[type="submit"].btn.cloud:disabled,
+    button.btn.cloud:disabled,
+    a.btn.cloud:disabled {
+      background-color: #f4f4f4;
+      color: #fafafa;
+      border: 1px solid #f4f4f4; }
+      input[type="button"].btn.cloud:disabled:hover,
+      input[type="submit"].btn.cloud:disabled:hover,
+      button.btn.cloud:disabled:hover,
+      a.btn.cloud:disabled:hover {
+        background-color: #f4f4f4;
+        color: #fafafa;
+        border: 1px solid #f4f4f4; }
+    input[type="button"].btn.cloud.ghost:not(:disabled),
+    input[type="submit"].btn.cloud.ghost:not(:disabled),
+    button.btn.cloud.ghost:not(:disabled),
+    a.btn.cloud.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #fafafa;
+      border: 1px solid #fafafa; }
+      input[type="button"].btn.cloud.ghost:not(:disabled):hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled):hover,
+      button.btn.cloud.ghost:not(:disabled):hover,
+      a.btn.cloud.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #ededed;
+        color: black;
+        border-color: #ededed; }
+      input[type="button"].btn.cloud.ghost:not(:disabled):active,
+      input[type="submit"].btn.cloud.ghost:not(:disabled):active,
+      button.btn.cloud.ghost:not(:disabled):active,
+      a.btn.cloud.ghost:not(:disabled):active {
+        background-color: #fafafa;
+        border: 1px solid #fafafa; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.cloud.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.cloud.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.cloud.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.cloud.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.mist,
+  input[type="submit"].btn.mist,
+  button.btn.mist,
+  a.btn.mist {
+    background-color: #ededed;
+    color: black;
+    border: 1px solid #ededed; }
+    input[type="button"].btn.mist:hover,
+    input[type="submit"].btn.mist:hover,
+    button.btn.mist:hover,
+    a.btn.mist:hover {
+      background-color: #e0e0e0;
+      border: 1px solid #e0e0e0; }
+    input[type="button"].btn.mist:active,
+    input[type="submit"].btn.mist:active,
+    button.btn.mist:active,
+    a.btn.mist:active {
+      background-color: #ededed;
+      border: 1px solid #ededed; }
+    input[type="button"].btn.mist:disabled,
+    input[type="submit"].btn.mist:disabled,
+    button.btn.mist:disabled,
+    a.btn.mist:disabled {
+      background-color: #ededed;
+      color: #ededed;
+      border: 1px solid #ededed; }
+      input[type="button"].btn.mist:disabled:hover,
+      input[type="submit"].btn.mist:disabled:hover,
+      button.btn.mist:disabled:hover,
+      a.btn.mist:disabled:hover {
+        background-color: #ededed;
+        color: #ededed;
+        border: 1px solid #ededed; }
+    input[type="button"].btn.mist.ghost:not(:disabled),
+    input[type="submit"].btn.mist.ghost:not(:disabled),
+    button.btn.mist.ghost:not(:disabled),
+    a.btn.mist.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #ededed;
+      border: 1px solid #ededed; }
+      input[type="button"].btn.mist.ghost:not(:disabled):hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled):hover,
+      button.btn.mist.ghost:not(:disabled):hover,
+      a.btn.mist.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #e0e0e0;
+        color: black;
+        border-color: #e0e0e0; }
+      input[type="button"].btn.mist.ghost:not(:disabled):active,
+      input[type="submit"].btn.mist.ghost:not(:disabled):active,
+      button.btn.mist.ghost:not(:disabled):active,
+      a.btn.mist.ghost:not(:disabled):active {
+        background-color: #ededed;
+        border: 1px solid #ededed; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.mist.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.mist.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.mist.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.mist.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.fog,
+  input[type="submit"].btn.fog,
+  button.btn.fog,
+  a.btn.fog {
+    background-color: #999999;
+    color: black;
+    border: 1px solid #999999; }
+    input[type="button"].btn.fog:hover,
+    input[type="submit"].btn.fog:hover,
+    button.btn.fog:hover,
+    a.btn.fog:hover {
+      background-color: #8c8c8c;
+      border: 1px solid #8c8c8c; }
+    input[type="button"].btn.fog:active,
+    input[type="submit"].btn.fog:active,
+    button.btn.fog:active,
+    a.btn.fog:active {
+      background-color: #999999;
+      border: 1px solid #999999; }
+    input[type="button"].btn.fog:disabled,
+    input[type="submit"].btn.fog:disabled,
+    button.btn.fog:disabled,
+    a.btn.fog:disabled {
+      background-color: #c3c3c3;
+      color: #999999;
+      border: 1px solid #c3c3c3; }
+      input[type="button"].btn.fog:disabled:hover,
+      input[type="submit"].btn.fog:disabled:hover,
+      button.btn.fog:disabled:hover,
+      a.btn.fog:disabled:hover {
+        background-color: #c3c3c3;
+        color: #999999;
+        border: 1px solid #c3c3c3; }
+    input[type="button"].btn.fog.ghost:not(:disabled),
+    input[type="submit"].btn.fog.ghost:not(:disabled),
+    button.btn.fog.ghost:not(:disabled),
+    a.btn.fog.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #999999;
+      border: 1px solid #999999; }
+      input[type="button"].btn.fog.ghost:not(:disabled):hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled):hover,
+      button.btn.fog.ghost:not(:disabled):hover,
+      a.btn.fog.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #8c8c8c;
+        color: black;
+        border-color: #8c8c8c; }
+      input[type="button"].btn.fog.ghost:not(:disabled):active,
+      input[type="submit"].btn.fog.ghost:not(:disabled):active,
+      button.btn.fog.ghost:not(:disabled):active,
+      a.btn.fog.ghost:not(:disabled):active {
+        background-color: #999999;
+        border: 1px solid #999999; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.fog.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.fog.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.fog.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.fog.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.steam,
+  input[type="submit"].btn.steam,
+  button.btn.steam,
+  a.btn.steam {
+    background-color: #666666;
+    color: white;
+    border: 1px solid #666666; }
+    input[type="button"].btn.steam:hover,
+    input[type="submit"].btn.steam:hover,
+    button.btn.steam:hover,
+    a.btn.steam:hover {
+      background-color: #595959;
+      border: 1px solid #595959; }
+    input[type="button"].btn.steam:active,
+    input[type="submit"].btn.steam:active,
+    button.btn.steam:active,
+    a.btn.steam:active {
+      background-color: #666666;
+      border: 1px solid #666666; }
+    input[type="button"].btn.steam:disabled,
+    input[type="submit"].btn.steam:disabled,
+    button.btn.steam:disabled,
+    a.btn.steam:disabled {
+      background-color: #aaaaaa;
+      color: #666666;
+      border: 1px solid #aaaaaa; }
+      input[type="button"].btn.steam:disabled:hover,
+      input[type="submit"].btn.steam:disabled:hover,
+      button.btn.steam:disabled:hover,
+      a.btn.steam:disabled:hover {
+        background-color: #aaaaaa;
+        color: #666666;
+        border: 1px solid #aaaaaa; }
+    input[type="button"].btn.steam.ghost:not(:disabled),
+    input[type="submit"].btn.steam.ghost:not(:disabled),
+    button.btn.steam.ghost:not(:disabled),
+    a.btn.steam.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #666666;
+      border: 1px solid #666666; }
+      input[type="button"].btn.steam.ghost:not(:disabled):hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled):hover,
+      button.btn.steam.ghost:not(:disabled):hover,
+      a.btn.steam.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #595959;
+        color: white;
+        border-color: #595959; }
+      input[type="button"].btn.steam.ghost:not(:disabled):active,
+      input[type="submit"].btn.steam.ghost:not(:disabled):active,
+      button.btn.steam.ghost:not(:disabled):active,
+      a.btn.steam.ghost:not(:disabled):active {
+        background-color: #666666;
+        border: 1px solid #666666; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.steam.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.steam.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.steam.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.steam.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.smoke,
+  input[type="submit"].btn.smoke,
+  button.btn.smoke,
+  a.btn.smoke {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #333333; }
+    input[type="button"].btn.smoke:hover,
+    input[type="submit"].btn.smoke:hover,
+    button.btn.smoke:hover,
+    a.btn.smoke:hover {
+      background-color: #262626;
+      border: 1px solid #262626; }
+    input[type="button"].btn.smoke:active,
+    input[type="submit"].btn.smoke:active,
+    button.btn.smoke:active,
+    a.btn.smoke:active {
+      background-color: #333333;
+      border: 1px solid #333333; }
+    input[type="button"].btn.smoke:disabled,
+    input[type="submit"].btn.smoke:disabled,
+    button.btn.smoke:disabled,
+    a.btn.smoke:disabled {
+      background-color: #909090;
+      color: #333333;
+      border: 1px solid #909090; }
+      input[type="button"].btn.smoke:disabled:hover,
+      input[type="submit"].btn.smoke:disabled:hover,
+      button.btn.smoke:disabled:hover,
+      a.btn.smoke:disabled:hover {
+        background-color: #909090;
+        color: #333333;
+        border: 1px solid #909090; }
+    input[type="button"].btn.smoke.ghost:not(:disabled),
+    input[type="submit"].btn.smoke.ghost:not(:disabled),
+    button.btn.smoke.ghost:not(:disabled),
+    a.btn.smoke.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #333333;
+      border: 1px solid #333333; }
+      input[type="button"].btn.smoke.ghost:not(:disabled):hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled):hover,
+      button.btn.smoke.ghost:not(:disabled):hover,
+      a.btn.smoke.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #262626;
+        color: white;
+        border-color: #262626; }
+      input[type="button"].btn.smoke.ghost:not(:disabled):active,
+      input[type="submit"].btn.smoke.ghost:not(:disabled):active,
+      button.btn.smoke.ghost:not(:disabled):active,
+      a.btn.smoke.ghost:not(:disabled):active {
+        background-color: #333333;
+        border: 1px solid #333333; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.smoke.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.smoke.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.smoke.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.smoke.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+  input[type="button"].btn.night,
+  input[type="submit"].btn.night,
+  button.btn.night,
+  a.btn.night {
+    background-color: #202020;
+    color: white;
+    border: 1px solid #202020; }
+    input[type="button"].btn.night:hover,
+    input[type="submit"].btn.night:hover,
+    button.btn.night:hover,
+    a.btn.night:hover {
+      background-color: #131313;
+      border: 1px solid #131313; }
+    input[type="button"].btn.night:active,
+    input[type="submit"].btn.night:active,
+    button.btn.night:active,
+    a.btn.night:active {
+      background-color: #202020;
+      border: 1px solid #202020; }
+    input[type="button"].btn.night:disabled,
+    input[type="submit"].btn.night:disabled,
+    button.btn.night:disabled,
+    a.btn.night:disabled {
+      background-color: #878787;
+      color: #202020;
+      border: 1px solid #878787; }
+      input[type="button"].btn.night:disabled:hover,
+      input[type="submit"].btn.night:disabled:hover,
+      button.btn.night:disabled:hover,
+      a.btn.night:disabled:hover {
+        background-color: #878787;
+        color: #202020;
+        border: 1px solid #878787; }
+    input[type="button"].btn.night.ghost:not(:disabled),
+    input[type="submit"].btn.night.ghost:not(:disabled),
+    button.btn.night.ghost:not(:disabled),
+    a.btn.night.ghost:not(:disabled) {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #202020;
+      border: 1px solid #202020; }
+      input[type="button"].btn.night.ghost:not(:disabled):hover,
+      input[type="submit"].btn.night.ghost:not(:disabled):hover,
+      button.btn.night.ghost:not(:disabled):hover,
+      a.btn.night.ghost:not(:disabled):hover {
+        transition: all 100ms linear;
+        background-color: #131313;
+        color: white;
+        border-color: #131313; }
+      input[type="button"].btn.night.ghost:not(:disabled):active,
+      input[type="submit"].btn.night.ghost:not(:disabled):active,
+      button.btn.night.ghost:not(:disabled):active,
+      a.btn.night.ghost:not(:disabled):active {
+        background-color: #202020;
+        border: 1px solid #202020; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-water:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-water:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-water:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-water:hover {
+        color: #1f8dd6; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-grass:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-grass:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-grass:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-grass:hover {
+        color: #54a654; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-grape:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-grape:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-grape:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-grape:hover {
+        color: #8064a2; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-chocolate:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-chocolate:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-chocolate:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-chocolate:hover {
+        color: #4f2902; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-apple:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-apple:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-apple:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-apple:hover {
+        color: #ce393b; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-clementine:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-clementine:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-clementine:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-clementine:hover {
+        color: #e26812; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-sunflower:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-sunflower:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-sunflower:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-sunflower:hover {
+        color: #f2b809; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-gunmetal:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-gunmetal:hover {
+        color: #807672; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-white:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-white:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-white:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-white:hover {
+        color: white; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-cloud:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-cloud:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-cloud:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-cloud:hover {
+        color: #fafafa; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-mist:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-mist:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-mist:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-mist:hover {
+        color: #ededed; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-fog:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-fog:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-fog:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-fog:hover {
+        color: #999999; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-steam:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-steam:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-steam:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-steam:hover {
+        color: #666666; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-smoke:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-smoke:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-smoke:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-smoke:hover {
+        color: #333333; }
+      input[type="button"].btn.night.ghost:not(:disabled).ghost-on-night:hover,
+      input[type="submit"].btn.night.ghost:not(:disabled).ghost-on-night:hover,
+      button.btn.night.ghost:not(:disabled).ghost-on-night:hover,
+      a.btn.night.ghost:not(:disabled).ghost-on-night:hover {
+        color: #202020; }
+
+body {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0.5em 0 0 0;
+  font-family: "Helvetica Neue", Helvetica, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #FAFAFA;
+  max-width: 90%;
+  margin: 0 auto; }
+  body.primary {
+    color: #000000; }
+  body.secondary, body.sub-title {
+    color: #666666; }
+
+a {
+  color: #1f8dd6;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor; }
+  a:hover {
+    color: #666666; }
+
+.secondary a {
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor; }
+  .secondary a:hover {
+    color: #1f8dd6; }
 
 /*# sourceMappingURL=style.css.map */

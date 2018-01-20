@@ -1,0 +1,89 @@
+input[type="button"].btn,
+input[type="submit"].btn,
+button.btn,
+a.btn {
+	@include fontSize(18px);
+	padding: 5px 2em;
+	border: none;
+	border-radius: 3px;
+	background-color: $color-mist;
+	color: $color-black;
+	border: 1px solid transparent;
+	&:disabled {
+		background-color: $color-mist;
+		color: rgba($color-black, 0.3);
+		cursor: not-allowed;
+		&:hover {
+			background-color: $color-mist;
+			color: rgba($color-black, 0.3);
+			transition: background-color 150ms linear;
+		}
+	}
+	&:hover {
+		background-color: darken($color-mist, 5%);
+		border-color: darken($color-mist, 5%);
+	}
+	&:active {
+		background-color: $color-mist;
+		border: 1px solid $color-mist;
+	}
+	&.ghost:not(:disabled) {
+		box-sizing: border-box;
+		background-color: transparent;
+		color: $color-black;
+		border: 1px solid $color-black;
+		&:hover {
+			background-color: $color-black;
+			color: $color-white;
+			transition: background-color 150ms linear;
+		}
+	}
+	@each $name, $color in $colors {
+		&.#{$name} {
+			background-color: nth($color, 1);
+			color: nth($color, 2);
+			border: 1px solid nth($color, 1);
+			&:hover {
+				background-color: darken(nth($color, 1), 5%);
+				border: 1px solid darken(nth($color, 1), 5%);
+			}
+			&:active {
+				background-color: nth($color, 1);
+				border: 1px solid nth($color, 1);
+			}
+			&:disabled {
+				background-color: mix(nth($color, 1), $color-mist);
+				color: nth($color, 1);
+				border: 1px solid mix(nth($color, 1), $color-mist);
+				&:hover {
+					background-color: mix(nth($color, 1), $color-mist);
+					color: nth($color, 1);
+					border: 1px solid mix(nth($color, 1), $color-mist);
+				}
+			}
+			&.ghost:not(:disabled) {
+				box-sizing: border-box;
+				background-color: transparent;
+				color: nth($color, 1);
+				border: 1px solid nth($color, 1);
+				&:hover {
+					transition: all 100ms linear;
+					background-color: darken(nth($color, 1), 5%);
+					color: nth($color, 2);
+					border-color: darken(nth($color, 1), 5%);
+				}
+				&:active {
+					background-color: nth($color, 1);
+					border: 1px solid nth($color, 1);
+				}
+				@each $name, $color in $colors {
+					&.ghost-on-#{$name} {
+						&:hover {
+							color: nth($color, 1);
+						}
+					}
+				}
+			}
+		}
+	}
+}
