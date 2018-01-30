@@ -10,11 +10,38 @@ h5 { @include fontSize(20px); }
 h6 { @include fontSize(18px); }
 p { @include fontSize(18px); }
 
-h1 + h2.secondary,
-h2 + h3.secondary,
-h3 + h4.secondary,
-h4 + h5.secondary,
-h5 + h6.secondary {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	&.highlight {
+		display: inline;
+		padding: 0 .2em;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+		text-transform: uppercase;
+	}
+}
+
+.handwriting {
+	line-height: 1.25em;
+	font-weight: normal;
+	font-family: $alternativeFontFamily;
+}
+
+/**
+ * Headings and Subheadings
+ * A heading of lesser equality that immediately follows
+ * another heading, should receive secondary styling.
+ */
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+	@extend .secondary;
 	margin-top: 0;
 }
 
@@ -22,15 +49,34 @@ ul,
 ol {
 	padding-left: 32px;
 	li {
-		@include fontSize(18px);
-		line-height: 24px;
+		@include fontSize(18px, false);
 	}
 }
 
 blockquote {
-	@include fontSize(40px);
-	line-height: 40px + 20px;
+	@include fontSize(20px);
+	border-right: mix(rgba($color-cloud, 0.4), nth($color-night, 1), 85%);
+	border-left: mix(rgba($color-cloud, 0.4), nth($color-night, 1), 85%);
 	box-sizing: border-box;
-	padding: 10px 20px;
-	font-family: $alternativeFontFamily;
+	padding: 10px 30px 10px 20px;
+	font-style: italic;
+	@each $name, $color in $colors {
+		&.#{$name} {
+			// border-right: 1px solid mix(rgba($color-cloud, 0.4), nth($color, 1), 85%);
+			// border-bottom: 1px solid mix(rgba($color-cloud, 0.4), nth($color, 1), 85%);
+			border-left: 10px solid nth($color, 1);
+			background-color: transparent;
+			color: currentColor;
+		}
+	}
+	& > footer {
+		text-align: right;
+		font-size: 0.75em;
+		cite {
+			font-style: normal;
+			span.person {
+				font-weight: bold;
+			}
+		}
+	}
 }

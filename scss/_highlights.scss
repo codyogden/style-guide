@@ -1,0 +1,19 @@
+@each $name,
+$color in $colors {
+  h1.#{$name},
+  h2.#{$name},
+  h3.#{$name},
+  h4.#{$name},
+  h5.#{$name},
+  h6.#{$name} {
+    background-color: nth($color, 1);
+    color: nth($color, 2);
+    a {
+      color: nth($color, 2);
+      &:hover {
+        color: nth($color, 2);
+        border-bottom-style: solid;
+      }
+    }
+  }
+}

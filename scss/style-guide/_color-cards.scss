@@ -34,11 +34,12 @@ div.color-cards {
 		font-size: 0.9em;
 		line-height: 1.25em;
 		color: $color-steam;
+		margin-top: 3px;
 		tr {
-			display: flex;
 			align-items: center;
 		}
 		tr th {
+			text-align: left;
 			padding: 2px 10px 0 10px;
 		}
 		tr td {

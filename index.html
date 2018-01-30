@@ -2,444 +2,990 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Style Guide</title>
 	<link href="style.css" rel="stylesheet" />
 </head>
 <body>
-	<h1>Style Guide</h1>
-	<section id="introduction">
-		<h2>Introduction</h2>
-	</section>
-	<section id="color">
-		<h2>Color Pallette</h2>
-		<p>Colors</p>
-		<div class="color-cards">
-			<!-- (div.color-card>div.wrapper>(div.swatch[aria-hidden=true][style="background-color: #######"]+h5+table>(tr>(th[scope=row]+td))*2)) -->
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #1F8DD6;"></div>
-					<h3>Water</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#1F8DD6</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>31, 141, 214</td>
-						</tr>
-					</table>
+	<header class="contain">
+		<h1>Style Guide</h1>
+	</header>
+	<main>
+		<section id="introduction">
+			<div class="contain">
+				<h2>Introduction</h2>
+				<p>Compiling a style guide creates a sense unity and continuity that can serve as a foundation to build friendly and familiar properties across the web. Style guides create foundational design, but it also creates a codebase that can be reused and built upon. This style guide is definitely a living document. Changes will be tracked on <a href="https://github.com/codyogden/style-guide">Github</a>.</p>
+			</div>
+		</section>
+
+
+		<section id="color">
+			<div class="contain">
+				<h2>Color</h2>
+				<p>Use of a common color pallette creates a sense of unity and familiarity across all properties. This color pallette is minimal, friendly, and flexible.</p>
+				<div class="color-cards">
+					<!-- (div.color-card>div.wrapper>(div.swatch[aria-hidden=true][style="background-color: #######"]+h5+table>(tr>(th[scope=row]+td))*2)) -->
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #1F8DD6;"></div>
+							<h3>Water</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#1F8DD6</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>31, 141, 214</td>
+								</tr>
+								<tr>
+									<th scope="row">VAR</th>
+									<td>$color-water</td>
+								</tr>
+								<tr>
+									<th scope="row">TXT</th>
+									<td>#FFFFFF</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+						<div class="swatch" aria-hidden="true" style="background-color: #54A654"></div>
+						<h3>Grass</h3>
+						<table>
+							<tr>
+								<th scope="row">HEX</th>
+								<td>#54A654</td>
+							</tr>
+							<tr>
+								<th scope="row">RGB</th>
+								<td>84, 166, 84</td>
+							</tr>
+							<tr>
+								<th scope="row">VAR</th>
+								<td>$color-grass</td>
+							</tr>
+							<tr>
+								<th scope="row">TXT</th>
+								<td>#FFFFFF</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+						<div class="swatch" aria-hidden="true" style="background-color: #8064A2;"></div>
+						<h3>Grape</h3>
+						<table>
+							<tr>
+								<th scope="row">HEX</th>
+								<td>#8064A2</td>
+							</tr>
+							<tr>
+								<th scope="row">RGB</th>
+								<td>128, 100, 162</td>
+							</tr>
+							<tr>
+								<th scope="row">VAR</th>
+								<td>$color-grape</td>
+							</tr>
+							<tr>
+								<th scope="row">TXT</th>
+								<td>#FFFFFF</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+						<div class="swatch" aria-hidden="true" style="background-color: #4F2902"></div>
+						<h3>Chocolate</h3>
+						<table>
+							<tr>
+								<th scope="row">HEX</th>
+								<td>#4F2902</td>
+							</tr>
+							<tr>
+								<th scope="row">RGB</th>
+								<td>79, 41, 2</td>
+							</tr>
+							<tr>
+								<th scope="row">VAR</th>
+								<td>$color-chocolate</td>
+							</tr>
+							<tr>
+								<th scope="row">TXT</th>
+								<td>#FFFFFF</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+						<div class="swatch" aria-hidden="true" style="background-color: #ce393b"></div>
+						<h3>Apple</h3>
+						<table>
+							<tr>
+								<th scope="row">HEX</th>
+								<td>#CE393B</td>
+							</tr>
+							<tr>
+								<th scope="row">RGB</th>
+								<td>206, 57, 59</td>
+							</tr>
+							<tr>
+								<th scope="row">VAR</th>
+								<td>$color-apple</td>
+							</tr>
+							<tr>
+								<th scope="row">TXT</th>
+								<td>#FFFFFF</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #E26812"></div>
+							<h3>Clementine</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#E26812</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>226, 104, 18</td>
+								</tr>
+								<tr>
+									<th scope="row">VAR</th>
+									<td>$color-clementine</td>
+								</tr>
+								<tr>
+									<th scope="row">TXT</th>
+									<td>#FFFFFF</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #F2B809"></div>
+							<h3>Sunflower</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#F2B809</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>242, 184, 9</td>
+								</tr>
+								<tr>
+									<th scope="row">VAR</th>
+									<td>$color-sunflower</td>
+								</tr>
+								<tr>
+									<th scope="row">TXT</th>
+									<td>#202020</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #807672"></div>
+							<h3>Gunmetal</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#807672</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>128, 118, 114</td>
+								</tr>
+								<tr>
+									<th scope="row">VAR</th>
+									<td>$color-gunmetal</td>
+								</tr>
+								<tr>
+									<th scope="row">TXT</th>
+									<td>#FFFFFF</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #FFFFFF"></div>
+							<h3>White</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#FFFFFF</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>255, 255, 255</td>
+								</tr>
+								<tr>
+									<th scope="row">VAR</th>
+									<td>$color-white</td>
+								</tr>
+								<tr>
+									<th scope="row">TXT</th>
+									<td>#000000</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+						<div class="swatch" aria-hidden="true" style="background-color: #FAFAFA;"></div>
+						<h3>Cloud</h3>
+						<table>
+							<tr>
+								<th scope="row">HEX</th>
+								<td>#FAFAFA</td>
+							</tr>
+							<tr>
+								<th scope="row">VAR</th>
+								<td>$color-cloud</td>
+							</tr>
+							<tr>
+								<th scope="row">RGB</th>
+								<td>250, 250, 250</td>
+							</tr>
+							<tr>
+								<th scope="row">TXT</th>
+								<td>#000000</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+						<div class="swatch" aria-hidden="true" style="background-color: #EDEDED"></div>
+						<h3>Mist</h3>
+						<table>
+							<tr>
+								<th scope="row">HEX</th>
+								<td>#EDEDED</td>
+							</tr>
+							<tr>
+								<th scope="row">RGB</th>
+								<td>237, 237, 237</td>
+							</tr>
+							<tr>
+								<th scope="row">VAR</th>
+								<td>$color-mist</td>
+							</tr>
+							<tr>
+								<th scope="row">TXT</th>
+								<td>#000000</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #999999"></div>
+							<h3>Fog</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#999999</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>153, 153, 153</td>
+								</tr>
+								<tr>
+									<th scope="row">VAR</th>
+									<td>$color-fog</td>
+								</tr>
+								<tr>
+									<th scope="row">TXT</th>
+									<td>#000000</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #666666"></div>
+							<h3>Steam</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#666666</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>102, 102, 102</td>
+								</tr>
+								<tr>
+									<th scope="row">VAR</th>
+									<td>$color-steam</td>
+								</tr>
+								<tr>
+									<th scope="row">TXT</th>
+									<td>#FFFFFF</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+						<div class="swatch" aria-hidden="true" style="background-color: #333333"></div>
+						<h3>Smoke</h3>
+						<table>
+							<tr>
+								<th scope="row">HEX</th>
+								<td>#333333</td>
+							</tr>
+							<tr>
+								<th scope="row">RGB</th>
+								<td>51, 51, 51</td>
+							</tr>
+							<tr>
+								<th scope="row">VAR</th>
+								<td>$color-smoke</td>
+							</tr>
+							<tr>
+								<th scope="row">TXT</th>
+								<td>#FAFAFA</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #202020"></div>
+							<h3>Night</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#202020</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>32, 32, 32</td>
+								</tr>
+								<tr>
+									<th scope="row">VAR</th>
+									<td>$color-night</td>
+								</tr>
+								<tr>
+									<th scope="row">TXT</th>
+									<td>#FAFAFA</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #000000;"></div>
+							<h3>Black</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#000000</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>0, 0, 0</td>
+								</tr>
+								<tr>
+									<th scope="row">VAR</th>
+									<td>$color-black</td>
+								</tr>
+								<tr>
+									<th scope="row">TXT</th>
+									<td>#FAFAFA</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="color-card">
-				<div class="wrapper">
-				<div class="swatch" aria-hidden="true" style="background-color: #54A654"></div>
-				<h3>Grass</h3>
-				<table>
+		</section>
+
+
+		<section id="layout">
+			<div class="contain">
+				<h2>Layout</h2>
+			</div>
+			<section id="header">
+				<section id="layout-row">
+					<div class="contain">
+						<h3 class="secondary">Row</h3>
+						<p>Rows use flexbox for layout. Widths are automatically proportioned based on the number of divs in the row. Default rows
+							feature a 1.5% gutter between cells. A container is not required to use a row.</p>
+					</div>
+					<div class="contain example-box transparent">
+						<div class="row contain">
+							<div class="water">&nbsp;</div>
+						</div>
+						<div class="row contain">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+						</div>
+						<div class="row contain">
+							<div class="water col-40-60">&nbsp;</div>
+							<div class="grass col-40-60">&nbsp;</div>
+						</div>
+						<div class="row contain">
+							<div class="water col-60-40">&nbsp;</div>
+							<div class="grass col-60-40">&nbsp;</div>
+						</div>
+						<div class="row contain">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+							<div class="grape">&nbsp;</div>
+						</div>
+						<div class="row contain">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+							<div class="grape">&nbsp;</div>
+							<div class="apple">&nbsp;</div>
+						</div>
+						<div class="row contain">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+							<div class="grape">&nbsp;</div>
+							<div class="apple">&nbsp;</div>
+							<div class="clementine">&nbsp;</div>
+						</div>
+					</div>
+				</section>
+				<section id="layout-row-collapsed-gutter">
+					<div class="contain">
+						<h3 class="secondary">Row with Collapsed Gutter</h3>
+						<p>In some layouts, a gutter may not be desired. Gutter can be removed by adding a utility class.</p>
+					</div>
+					<div class="contain example-box transparent">
+						<div class="row contain collapse">
+							<div class="water">&nbsp;</div>
+						</div>
+						<div class="row contain collapse">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+						</div>
+						<div class="row contain collapse">
+							<div class="water col-40-60">&nbsp;</div>
+							<div class="grass col-40-60">&nbsp;</div>
+						</div>
+						<div class="row contain collapse">
+							<div class="water col-60-40">&nbsp;</div>
+							<div class="grass col-60-40">&nbsp;</div>
+						</div>
+						<div class="row contain collapse">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+							<div class="grape">&nbsp;</div>
+						</div>
+						<div class="row contain collapse">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+							<div class="grape">&nbsp;</div>
+							<div class="apple">&nbsp;</div>
+						</div>
+						<div class="row contain collapse">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+							<div class="grape">&nbsp;</div>
+							<div class="apple">&nbsp;</div>
+							<div class="clementine">&nbsp;</div>
+						</div>
+					</div>
+				</section>
+				<section id="layout-row-full-width">
+					<div class="contain">
+						<h3 class="secondary">Full Width</h3>
+						<p>Rows not inside a container will expand to fit the entire width of their parent element.</p>
+					</div>
+		
+					<div class="example-box">
+						<div class="row">
+							<div class="water">&nbsp;</div>
+						</div>
+						<div class="row">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+						</div>
+						<div class="row">
+							<div class="water col-40-60">&nbsp;</div>
+							<div class="grass col-40-60">&nbsp;</div>
+						</div>
+						<div class="row">
+							<div class="water col-60-40">&nbsp;</div>
+							<div class="grass col-60-40">&nbsp;</div>
+						</div>
+						<div class="row">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+							<div class="grape">&nbsp;</div>
+						</div>
+						<div class="row">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+							<div class="grape">&nbsp;</div>
+							<div class="apple">&nbsp;</div>
+						</div>
+						<div class="row">
+							<div class="water">&nbsp;</div>
+							<div class="grass">&nbsp;</div>
+							<div class="grape">&nbsp;</div>
+							<div class="apple">&nbsp;</div>
+							<div class="clementine">&nbsp;</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<section id="typography" class="contain">
+			<h2>Typography</h2>
+			<section id="typeface">
+				<h3 class="secondary">Typeface</h3>
+				<p>Helvetica Neue Regular is the primary typeface for all text elements with appropriate font and system font fallbacks.</p>
+					<div class="example-box center">
+						<span style="text-align:center; font-size: 2em; line-height: 1em; font-weight: normal;">The quick brown fox jumped over the lazy dog.</span>
+					</div>
+
+				<section id="typeface-handwriting">
+					<h4>Handwriting</h4>
+					<p><a href="https://fonts.google.com/specimen/Rock+Salt" title="Rock Salt Typeface">Rock Salt</a> is a handwriting typface used for text that should call attention to itself. The handwriting typeface should be used sparingly and never for blocks of text. Centering the text is preferred.</p>
+					<div class="example-box center">
+						<span class="handwriting" style="text-align:center; font-size: 1.5em; line-height: 1em; font-weight: normal;">The quick brown fox jumped over the lazy dog.</span>
+					</div>
+				</section>
+			</section>
+
+			<section id="typography-sizes" class="contain">
+				<h3>Text Sizes</h3>
+				<table class="text-size-table">
 					<tr>
-						<th scope="row">HEX</th>
-						<td>#54A654</td>
+						<th scope="row">Heading 1</th>
+						<td>48px</td>
+						<td><h1>Hello, World!</h1></td>
 					</tr>
 					<tr>
-						<th scope="row">RGB</th>
-						<td>84, 166, 84</td>
+						<th scope="row">Heading 2</th>
+						<td>40px</td>
+						<td><h2>Hello, World!</h2></td>
+					</tr>
+					<tr>
+						<th scope="row">Heading 3</th>
+						<td>32px</td>
+						<td><h3>Hello, World!</h3></td>
+					</tr>
+					<tr>
+						<th scope="row">Heading 4</th>
+						<td>24px</td>
+						<td><h4>Hello, World!</h4></td>
+					</tr>
+					<tr>
+						<th scope="row">Heading 5</th>
+						<td>20px</td>
+						<td><h5>Hello, World!</h5></td>
+					</tr>
+					<tr>
+						<th scope="row">Heading 6</th>
+						<td>17px</td>
+						<td><h6>Hello, World!</h6></td>
+					</tr>
+					<tr>
+						<th scope="row">Paragraph</th>
+						<td>18px</td>
+						<td><hh>Hello, World!</hh></td>
+					</tr>
+					<tr>
+						<th scope="row">Blockquote</th>
+						<td>20px</td>
+						<td><blockquote class="grape">Hello, World!</blockquote></td>
 					</tr>
 				</table>
+				<section>
+					<h4 class="secondary">Line Height</h4>
+					<p>Line height is a calculation of the font size plus eight pixels.</p>
+				</section>
+			</section>
+
+			<section id="typography-colors" class="contain">
+				<h3>Text Colors</h3>
+				<p>For readability and accessibility, all text color should have a color contrast ratio of at least 3.0. Color classes are set with default text colors that meet this guideline.</p>
+				<div class="color-cards">
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #000000"></div>
+							<h3>Primary: Black</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#000000</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>0, 0, 0</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #666666"></div>
+							<h3>Secondary: Steam</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#666666</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>102, 102, 102</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="color-card">
+						<div class="wrapper">
+							<div class="swatch" aria-hidden="true" style="background-color: #FFFFFF"></div>
+							<h3>Primary: White</h3>
+							<table>
+								<tr>
+									<th scope="row">HEX</th>
+									<td>#FFFFFF</td>
+								</tr>
+								<tr>
+									<th scope="row">RGB</th>
+									<td>255, 255, 255</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="example-box center">
+					<h1>A Primary Color Example.</h1>
+				</div>
+				<div class="example-box center">
+					<h2 class="secondary">A Secondary Color Example.</h2>
+				</div>
+				<div class="example-box center sunflower">
+					<span class="handwriting" style="text-align:center; font-size: 1.5em; line-height: 1em; font-weight: normal;">Text Color Contrasts Background</span>
+				</div>
+				<div class="example-box center clementine">
+					<span class="handwriting" style="text-align:center; font-size: 1.5em; line-height: 1em; font-weight: normal;">Text Color Contrasts Background</span>
+				</div>
+				<div class="example-box center grape">
+					<span class="handwriting" style="text-align:center; font-size: 1.5em; line-height: 1em; font-weight: normal;">Text Color Contrasts Background</span>
+				</div>
+				<div class="example-box center gunmetal">
+					<span class="handwriting" style="text-align:center; font-size: 1.5em; line-height: 1em; font-weight: normal;">Text Color Contrasts Background</span>
+				</div>
+			</section>
+
+		</section>
+
+		<section id="blockquote">
+			<div class="contain">
+				<h2>Blockquote</h2>
+				<p>Feature passages and citations from others. Any color can be applied.</p>
+				<div class="example-box transparent">
+					<blockquote class="water">
+						<p>Our species is the only creative species, and it has only one creative instrument, the individual mind and spirit of man.
+							Nothing was ever created by two men. There are no good collaborations, whether in music, in art, in poetry, in mathematics,
+							in philosophy. Once the miracle of creation has taken place, the group can build and extend it, but the group never invents
+							anything. The preciousness lies in the lonely mind of a man.</p>
+						<footer>
+							<cite>
+								<span class="person">John Steinbeck</span>, East of Eden</cite>
+						</footer>
+					</blockquote>
 				</div>
 			</div>
-			<div class="color-card">
-				<div class="wrapper">
-				<div class="swatch" aria-hidden="true" style="background-color: #8064A2;"></div>
-				<h3>Grape</h3>
-				<table>
-					<tr>
-						<th scope="row">HEX</th>
-						<td>#8064A2</td>
-					</tr>
-					<tr>
-						<th scope="row">RGB</th>
-						<td>128, 100, 162</td>
-					</tr>
-				</table>
-				</div>
+		</section>
+
+		<section id="highlights" class="contain">
+			<h2>Highlights</h2>
+			<p>Heading elements can be highlighted to feature a color background that wraps with the text. Headings with highlights are
+				transformed to uppercase.</p>
+			<div class="example-box">
+				<h1 class="grass highlight">Bet your bottom dollar that tomorrow there'll be sun!</h1>
 			</div>
-			<div class="color-card">
-				<div class="wrapper">
-				<div class="swatch" aria-hidden="true" style="background-color: #4F2902"></div>
-				<h3>Chocolate</h3>
-				<table>
-					<tr>
-						<th scope="row">HEX</th>
-						<td>#4F2902</td>
-					</tr>
-					<tr>
-						<th scope="row">RGB</th>
-						<td>79, 41, 2</td>
-					</tr>
-				</table>
-				</div>
+		</section>
+
+		<section id="links" class="contain">
+			<h2>Links</h2>
+			<p>Ensuring links are visually represented across the entire
+				<a href="#color">color pallette</a> is important. They should have a dotted, 1px bottom border that matches the current color of the text.</p>
+			<p>The text color of anchor tags found on White, Cloud, or Mist should be colored with Water. On hover, they should change
+				to Steam.</p>
+			<div class="example-box center">
+				<a>Example Link</a>
 			</div>
-			<div class="color-card">
-				<div class="wrapper">
-				<div class="swatch" aria-hidden="true" style="background-color: #ce393b"></div>
-				<h3>Apple</h3>
-				<table>
-					<tr>
-						<th scope="row">HEX</th>
-						<td>#CE393B</td>
-					</tr>
-					<tr>
-						<th scope="row">RGB</th>
-						<td>206, 57, 59</td>
-					</tr>
-				</table>
-				</div>
+			<p>Links found on color backgrounds should match their current text color. On hover, the bottom border should change from dotted
+				to solid.</p>
+			<div class="example-box center sunflower">
+				<a>Example Link</a>
 			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #E26812"></div>
-					<h3>Clementine</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#E26812</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>226, 104, 18</td>
-						</tr>
-					</table>
-				</div>
+			<h4 class="secondary">Button-style Link</h4>
+			<p>Links can by styled as
+				<a href="#buttons">buttons</a> to create emphasis, but should not be used in place of buttons for functionality.</p>
+			<div class="example-box center water">
+				<a class="btn white ghost ghost-on-water">Example Link</a>
 			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #F2B809"></div>
-					<h3>Sunflower</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#F2B809</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>242, 184, 9</td>
-						</tr>
-					</table>
-				</div>
+		</section>
+
+		<section class="contain">
+			<h3>Lists</h3>
+			<p>Ordered and unordered lists have a padding-left of 32px.</p>
+			<div class="example-box">
+				<ol>
+					<li>Set fur and can military</li>
+					<li>Casting he of client been</li>
+					<li>It class. For complicated the</li>
+				</ol>
 			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #807672"></div>
-					<h3>Gunmetal</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#807672</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>128, 118, 114</td>
-						</tr>
-					</table>
-				</div>
+			<div class="example-box">
+				<ul>
+					<li>Have monstrous the facilitate as</li>
+					<li>Sofa I true, let's woke</li>
+					<li>Duties sleep orthographic a gradual</li>
+				</ul>
 			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #FFFFFF"></div>
-					<h3>White</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#FFFFFF</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>255, 255, 255</td>
-						</tr>
-					</table>
+		</section>
+
+
+		<section id="buttons" class="contain">
+			<h2>Buttons</h2>
+			<p>Buttons can be used on anchor, input[type="button], input[type="submit"], and button tags.</p>
+			<section id="buttons-basic">
+				<h3 class="secondary">Basic Button</h3>
+				<p>A basic button features a background color that contrasts its container. On hover, the color darkens and returns to normal when active.</p>
+				<div class="example-box center">
+					<button class="btn water">Sign Up</button>
 				</div>
-			</div>
-			<div class="color-card">
-				<div class="wrapper">
-				<div class="swatch" aria-hidden="true" style="background-color: #FAFAFA;"></div>
-				<h3>Cloud</h3>
-				<table>
-					<tr>
-						<th scope="row">HEX</th>
-						<td>#FAFAFA</td>
-					</tr>
-					<tr>
-						<th scope="row">RGB</th>
-						<td>250, 250, 250</td>
-					</tr>
-				</table>
+			</section>
+			<section id="buttons-ghost">
+				<h3 class="secondary">Ghost Button</h3>
+				<p>A ghost button has the same background color as its container. On hover, it fills and the text color changes to the default contrasting color.
+					when active.</p>
+				<div class="example-box center">
+					<button class="btn water ghost">Sign Up</button>
 				</div>
-			</div>
-			<div class="color-card">
-				<div class="wrapper">
-				<div class="swatch" aria-hidden="true" style="background-color: #EDEDED"></div>
-				<h3>Mist</h3>
-				<table>
-					<tr>
-						<th scope="row">HEX</th>
-						<td>#EDEDED</td>
-					</tr>
-					<tr>
-						<th scope="row">RGB</th>
-						<td>237, 237, 237</td>
-					</tr>
-				</table>
+				<h3 class="secondary">Ghost on Color</h3>
+				<p>Ghost on color is utility that enables specifying the text color on hover.</p>
+				<div class="example-box center water">
+					<button class="btn ghost white ghost-on-water">Sign Up</button>
 				</div>
-			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #999999"></div>
-					<h3>Fog</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#999999</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>153, 153, 153</td>
-						</tr>
-					</table>
+			</section>
+			<section id="buttons-disabled">
+				<h3 class="secondary">Disabled Button</h3>
+				<p>Disabled buttons are unive</p>
+				<div class="example-box center">
+					<button disabled="disabled" class="btn water">Sign Up</button>
 				</div>
-			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #666666"></div>
-					<h3>Steam</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#666666</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>102, 102, 102</td>
-						</tr>
-					</table>
+			</section>
+		</section>
+		<section id="cards-and-blocks" class="contain">
+			<h2>Cards and Blocks</h2>
+			<p>Cards and Blocks have been important since the release and subsequent influence of Google's Material Design.</p>
+			<section id="cards">
+				<h3 class="secondary">Cards</h3>
+				<div class="example-box transparent">
+					<div class="row contain">
+						<div>
+							<a href="#" class="card">
+								<div href="#" class="card-header" style="background-image: url('assets/image.jpg');"></div>
+								<div class="card-content">
+									<h4>
+										Title of the Card
+									</h4>
+									<p>
+										Card is going strong. This is a strong card layout. I think this is a really strong card layout system.
+									</p>
+								</div>
+								<footer class="card-footer">
+									<span class="action-link">
+										Read More
+									</span>
+								</footer>
+							</a>
+						</div>
+					</div>
+					<div class="row contain">
+						<div>
+							<a href="#" class="card">
+								<div href="#" class="card-header" style="background-image: url('assets/image.jpg');"></div>
+								<div class="card-content">
+									<h4>
+										Title of the Card
+									</h4>
+									<p>
+										Card is going strong. This is a strong card layout. I think this is a really strong card layout system.
+									</p>
+								</div>
+								<footer class="card-footer">
+									<span class="action-link">
+										Read More
+									</span>
+								</footer>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="card">
+								<div href="#" class="card-header" style="background-image: url('assets/image.jpg');"></div>
+								<div class="card-content">
+									<h4>
+										Title of the Card
+									</h4>
+									<p>
+										Card is going strong. This is a strong card layout. I think this is a really strong card layout system.
+									</p>
+								</div>
+								<footer class="card-footer">
+									<span class="action-link">
+										Read More
+									</span>
+								</footer>
+							</a>
+						</div>
+					</div>
+					<div class="row contain">
+						<div>
+							<a href="#" class="card">
+								<div href="#" class="card-header" style="background-image: url('assets/image.jpg');"></div>
+								<div class="card-content">
+									<h4>
+										Title of the Card
+									</h4>
+									<p>
+										Card is going strong. This is a strong card layout. I think this is a really strong card layout system.
+									</p>
+								</div>
+								<footer class="card-footer">
+									<span class="action-link">
+										Read More
+									</span>
+								</footer>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="card">
+								<div href="#" class="card-header" style="background-image: url('assets/image.jpg');"></div>
+								<div class="card-content">
+									<h4>
+										Title of the Card
+									</h4>
+									<p>
+										Card is going strong. This is a strong card layout. I think this is a really strong card layout system.
+									</p>
+								</div>
+								<footer class="card-footer">
+									<span class="action-link">
+										Read More
+									</span>
+								</footer>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="card">
+								<div href="#" class="card-header" style="background-image: url('assets/image.jpg');"></div>
+								<div class="card-content">
+									<h4>
+										Title of the Card
+									</h4>
+									<p>
+										Card is going strong. This is a strong card layout. I think this is a really strong card layout system.
+									</p>
+								</div>
+								<footer class="card-footer">
+									<span class="action-link">
+										Read More
+									</span>
+								</footer>
+							</a>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="color-card">
-				<div class="wrapper">
-				<div class="swatch" aria-hidden="true" style="background-color: #333333"></div>
-				<h3>Smoke</h3>
-				<table>
-					<tr>
-						<th scope="row">HEX</th>
-						<td>#333333</td>
-					</tr>
-					<tr>
-						<th scope="row">RGB</th>
-						<td>51, 51, 51</td>
-					</tr>
-				</table>
+
+				<h4>Side Variant</h4>
+				<div class="example-box transparent">
+					
+					<div class="contain">
+						<a href="#" class="card-side">
+							<div href="#" class="card-header" style="background-image: url('assets/image.jpg');"></div>
+							<div class="card-content">
+								<h4>
+									Title of the Card
+								</h4>
+								<p>
+									Card is going strong. This is a strong card layout. I think this is a really strong card layout system.
+								</p>
+							</div>
+							<footer class="card-footer">
+								<span class="action-link">
+									Read More
+								</span>
+							</footer>
+						</a>
+
+						<a href="#" class="card-side">
+							<div href="#" class="card-header" style="background-image: url('assets/image.jpg');"></div>
+							<div class="card-content">
+								<h4>
+									Title of the Card
+								</h4>
+								<p>
+									Card is going strong. This is a strong card layout. I think this is a really strong card layout system.
+								</p>
+							</div>
+							<footer class="card-footer">
+								<span class="action-link">
+									Read More
+								</span>
+							</footer>
+						</a>
+
+						<a href="#" class="card-side">
+							<div href="#" class="card-header" style="background-image: url('assets/image.jpg');"></div>
+							<div class="card-content">
+								<h4>
+									Title of the Card
+								</h4>
+								<p>
+									Card is going strong. This is a strong card layout. I think this is a really strong card layout system.
+								</p>
+							</div>
+							<footer class="card-footer">
+								<span class="action-link">
+									Read More
+								</span>
+							</footer>
+						</a>
+						
+					</div>
+					
+			</section>
+			<section id="blocks">
+				<h3 class="secondary">Blocks</h3>
+				<p>Blocks are solid block of color that can contain content.</p>
+				<div class="example-box ">
+					<div class="water" style="height:200px">
+						<div class="contain" style="display: flex; flex-flow: column nowrap; height: 100%; justify-content: center; align-items: center; text-align: center">
+							<h3>Sign Up for our Newsletter</h3>
+							<button style="margin-top: 1em;" class="btn white ghost ghost-on-water">Sign Up</button>
+						</div>
 				</div>
-			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #202020"></div>
-					<h3>Night</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#202020</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>32, 32, 32</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #000000;"></div>
-					<h3>Black</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#000000</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>0, 0, 0</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-	</section>
-	<hr />
-	<section id="typography">
-		<h2>Typography</h2>
-		<h3>Primary Typeface</h3>
-		<p>Helvetica Neue Regular is the primary typeface for all text elements with a fallback order of Helvetica, system default font, Arial, then sans-serif.</p>
-		<div style="font-size: 40px; line-height: 48px; padding: 20px 0;">The quick brown fox jumped over the lazy dog.</div>
-		<h3>Alternative Typeface</h3>
-		<p><a href="https://fonts.google.com/specimen/Rock+Salt" title="Rock Salt Typeface">Rock Salt</a> is the alternative typface used for blockquotes and stand-out typography that should call attention to itself. Alternative typeface should be used sparingly and only to call attention to a specific passage or area. Alternative typeface should only be used in a block element that has the full width of its container, not to exceed the normal content width. Centering the text is preferred.</p>
-		<blockquote style="text-align: center;">The quick brown fox jumped over the lazy dog.</blockquote>
-		<h3>Text Sizes</h3>
-		<table class="text-size-table">
-			<tr>
-				<th scope="row">Heading 1</th>
-				<td>48px</td>
-				<td><h1>Hello, World!</h1></td>
-			</tr>
-			<tr>
-				<th scope="row">Heading 2</th>
-				<td>40px</td>
-				<td><h2>Hello, World!</h2></td>
-			</tr>
-			<tr>
-				<th scope="row">Heading 3</th>
-				<td>32px</td>
-				<td><h3>Hello, World!</h3></td>
-			</tr>
-			<tr>
-				<th scope="row">Heading 4</th>
-				<td>24px</td>
-				<td><h4>Hello, World!</h4></td>
-			</tr>
-			<tr>
-				<th scope="row">Heading 5</th>
-				<td>20px</td>
-				<td><h5>Hello, World!</h5></td>
-			</tr>
-			<tr>
-				<th scope="row">Heading 6</th>
-				<td>17px</td>
-				<td><h6>Hello, World!</h6></td>
-			</tr>
-			<tr>
-				<th scope="row">Paragraph</th>
-				<td>18px</td>
-				<td><hh>Hello, World!</hh></td>
-			</tr>
-			<tr>
-				<th scope="row">Blockquote</th>
-				<td>40px</td>
-				<td><blockquote style="padding: 0;">Hello, World!</blockquote></td>
-			</tr>
-		</table>
-		<h3>Line Heights</h3>
-		<p>Line height is a calculation of the font size plus eight pixels. There are a few exceptions to this rule:</p>
-		<ul>
-			<li>Blockquotes have a line height of their font size plus twenty pixels.</li>
-			<li>List items have a line height of their font size plus six pixels.</li>
-		</ul>
-		<h3>Text Colors</h3>
-		<p>For readability and accessibility, all text color should have a color contrast ratio of at least 3.0. Color classes are set with default text colors that meet this guideline.</p>
-		<div class="color-cards">
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #000000"></div>
-					<h3>Primary: Black</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#000000</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>0, 0, 0</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #666666"></div>
-					<h3>Secondary: Steam</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#666666</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>102, 102, 102</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="color-card">
-				<div class="wrapper">
-					<div class="swatch" aria-hidden="true" style="background-color: #FFFFFF"></div>
-					<h3>Primary: White</h3>
-					<table>
-						<tr>
-							<th scope="row">HEX</th>
-							<td>#FFFFFF</td>
-						</tr>
-						<tr>
-							<th scope="row">RGB</th>
-							<td>255, 255, 255</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-		<h2>A Primary Color Example.</h2>
-		<h3 class="secondary">A secondary color example.</h3>
-		<blockquote class="sunflower" style="min-height: 150px; padding: 20px 0; display: flex; justify-content: center; text-align: center; align-items: center;">
-			<h2 style="margin: 0 auto;">Text Color Contrasts Background</h2>
-		</blockquote>
-		<h3>Lists</h3>
-		<p>Ordered and unordered lists have a left-padding of 32px. List items have a line height of 24px (instead of the standard paragraph line height).</p>
-		<h4 class="secondary">Unordered List Example</h4>
-		<ul>
-			<li>Have monstrous the facilitate as</li>
-			<li>Sofa I true, let's woke</li>
-			<li>Duties sleep orthographic a gradual</li>
-		</ul>
-		<h4 class="secondary">Ordered List Example</h4>
-		<ol>
-			<li>Set fur and can military</li>
-			<li>Casting he of client been</li>
-			<li>It class. For complicated the</li>
-		</ol>
-	</section>
-	<hr />
-	<section id="layout">
-		<h2>Layout</h2>
-		<h3 class="secondary">Fixed Width</h3>
-		<p>Fixed Width pages should have a content width of 900px, top and bottom margins of 0px, and left and right margions of auto.</p>
-		<h3 class="secondary">Full Width</h3>
-		<p></p>
-	</section>
-	<hr />
-	<section id="buttons">
-		<h2>Buttons</h2>
-		<p>Buttons </p>
-		<div>
-			<button class="btn grass">Submit</button>
-			<input class="btn ghost grass" type="submit">
-			<button class="btn grass" disabled>Submit</button>
-			<button class="btn">Submit</button>
-			<button class="btn ghost">Submit</button>
-			<button class="btn" disabled>Submit</button>
-		</div>
-		<div class="water" style="display: flex; margin: 10px 0; text-align: center; justify-content: center; align-items: center; flex-flow: column nowrap;padding: 30px 0;">
-			<blockquote style="margin: 0; padding: 0 0 20px 0;">Ready to get started?</blockquote>
-			<a href="#" class="btn ghost white ghost-on-water">Sign Up</a>
-		</div>
-	</section>
-	<hr />
-	<script>
-		// Highlight Color Card HEX and RGB values on click.
-		const cellsToHightlight = document.querySelectorAll('div.color-card table tr > th + td');
-		const numOfCellsToHightlight = cellsToHightlight.length;
-		for(let i = 0; i < numOfCellsToHightlight; i++) {
-			let cell = cellsToHightlight.item(i);
-			cell.addEventListener('click', function() {
-				window.getSelection().selectAllChildren( this );
-				document.execCommand('copy');
-			});
-		}
-	</script>
+			</section>
+		</section>
+
+
+	</main>
+	<script src="script.js"></script>
 </body>
 </html>

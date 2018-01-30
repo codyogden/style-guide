@@ -1,23 +1,63 @@
+.example-box {
+	margin: 1em 0 0 0;
+	padding: 20px 0 30px 0;
+	background-color: #ededed;
+	position: relative;
+	clear: both;
+	&.center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&.transparent {
+		background-color: transparent;
+		border: solid 1px #807672;
+		box-sizing: border-box;
+	}
+	&:after {
+		content: 'Example';
+		font-size: 0.75em;
+		border-top-right-radius: 3px;
+		border-top-left-radius: 3px;
+		background-color: #807672;
+		color: #FFF;
+		line-height: 1.25em;
+		padding: 3px 1em;
+		position: absolute;
+		bottom: 0px;
+		right: 8px;
+	}
+}
+
 @import 'mixins/mixins';
 @import 'color';
+@import 'style-guide/main';
 @import 'typography';
 @import 'forms';
-@import 'style-guide/main';
 @import 'button';
+@import 'layout';
+@import 'footer';
+@import 'card';
+@import 'blocks';
+@import 'highlights';
 
 body {
 	@include fontSize(18px);
 	font-family: $baseFontFamily;
 	background-color: #FAFAFA;
-	max-width: 90%;
-	margin: 0 auto;
+	padding: 0;
+	margin: 0;
 }
+
 
 a {
 	color: $color-water;
 	text-decoration: none;
 	border-bottom: 1px dotted currentColor;
 	&:hover {
+		color: $color-clementine;
+	}
+	&:active {
 		color: $color-steam;
 	}
 }
