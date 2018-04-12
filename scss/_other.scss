@@ -1,0 +1,46 @@
+.row {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+	flex-flow: row wrap;
+
+	.row {
+		padding: 0;
+	}
+
+	& > div:only-child {
+		flex: 0 0 100%;
+	}
+
+	@for $i from 2 through 5 {
+		& > div:nth-last-child(#{$i}),
+		& > div:nth-last-child(#{$i}) ~ div {
+			flex: 0 0 ( ( 100-( 1.5 * ( $i - 1 ) ) ) / $i ) * 1%;
+			&.responsive {
+				@if $i == 4 {
+					@media screen and ( max-width: 900px ) {
+						flex: 0 0 ( ( 100-( 1.5 * ( ( $i / 2 ) - 1 ) ) ) / ( $i / 2 ) ) * 1%;
+						&:nth-child(n+3) {
+							margin-top: 10px;
+						}
+					}
+				}
+
+				@if $i == 5 {
+					@media screen and ( max-width: 900px ) {
+						&:nth-child(n+3) {
+							margin-top: 0px;
+						}
+					}
+				}
+
+				@media screen and ( max-width: 600px ) {
+					flex: 0 0 100%;
+					&:nth-child(n+2) {
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+}
