@@ -1381,6 +1381,9 @@ a.btn {
     flex: 0 0 49.25%;
     margin-top: 10px; } }
 @media screen and (max-width: 600px) {
+  .row-responsive > div:nth-last-child(5):nth-child(n), .row-responsive > div:nth-last-child(5) ~ div:nth-child(n) {
+    flex: 0 0 100%; } }
+@media screen and (max-width: 600px) {
   .row-responsive > div:nth-last-child(5), .row-responsive > div:nth-last-child(5) ~ div {
     flex: 0 0 100%; }
     .row-responsive > div:nth-last-child(5):nth-child(n+2), .row-responsive > div:nth-last-child(5) ~ div:nth-child(n+2) {

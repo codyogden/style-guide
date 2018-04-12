@@ -122,6 +122,11 @@
 						margin-top: 10px;
 					}
 				}
+				@media screen and ( max-width: 600px ) {
+					&:nth-child(n) {
+						flex: 0 0 100%;
+					}
+				}
 			}
 
 			@media screen and ( max-width: 600px ) {
