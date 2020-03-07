@@ -186,7 +186,7 @@ const swatches = [
 const Color = () => {
   return <>
     <h2>Color</h2>
-    <p>Use of a common color pallette creates a sense of unity and familiarity. This color pallette is minimal, friendly, and flexible for a variety of projects.</p>
+    <p>Use of a common color palette creates a sense of unity and familiarity. This color palette is minimal, friendly, and flexible for a variety of projects.</p>
     <ul className={styles.swatchList}>
       {swatches.map((swatch) => <ColorSwatch {...swatch} key={swatch.name} />)}
     </ul>
