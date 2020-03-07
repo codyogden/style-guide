@@ -1,0 +1,24 @@
+@use './variables';
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700|Permanent+Marker&display=swap');
+
+$fontInter: 'Inter', sans-serif;
+$fontDisplay: 'Permanent Marker', cursive;
+
+body {
+  font-family: $fontInter;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  max-width: 95%;
+  width: variables.$content-width;
+  margin-right: auto;
+  margin-left: auto;
+}
