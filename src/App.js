@@ -7,8 +7,10 @@ import Color from './sections/Color';
 const App = () => {
   return <>
     <Header />
-    <Intro />
-    <Color />
+    <main>
+      <Intro />
+      <Color />
+    </main>
   </>;
 };
 

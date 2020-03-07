@@ -6,6 +6,7 @@ import styles from './Color.scss';
 
 const swatches = [
   {
+    slug: 'water',
     name: 'Water',
     hex: '1F8DD6',
     rgb: {
@@ -17,6 +18,7 @@ const swatches = [
     textColor: 'FFFFFF',
   },
   {
+    slug: 'grass',
     name: 'Grass',
     hex: '54A654',
     rgb: {
@@ -28,6 +30,7 @@ const swatches = [
     textColor: 'FFFFFF',
   },
   {
+    slug: 'grape',
     name: 'Grape',
     hex: '8064A2',
     rgb: {
@@ -39,6 +42,7 @@ const swatches = [
     textColor: 'FFFFFF',
   },
   {
+    slug: 'chocolate',
     name: 'Chocolate',
     hex: '4F2902',
     rgb: {
@@ -50,6 +54,7 @@ const swatches = [
     textColor: 'FFFFFF',
   },
   {
+    slug: 'apple',
     name: 'Apple',
     hex: 'CE393B',
     rgb: {
@@ -61,6 +66,7 @@ const swatches = [
     textColor: 'FFFFFF',
   },
   {
+    slug: 'clementine',
     name: 'Clementine',
     hex: 'E26812',
     rgb: {
@@ -72,6 +78,7 @@ const swatches = [
     textColor: 'FFFFFF',
   },
   {
+    slug: 'sunflower',
     name: 'Sunflower',
     hex: 'F2B809',
     rgb: {
@@ -83,6 +90,7 @@ const swatches = [
     textColor: '202020',
   },
   {
+    slug: 'gunmetal',
     name: 'Gunmetal',
     hex: '807672',
     rgb: {
@@ -94,6 +102,7 @@ const swatches = [
     textColor: 'FFFFFF',
   },
   {
+    slug: 'white',
     name: 'White',
     hex: 'FFFFFF',
     rgb: {
@@ -105,6 +114,7 @@ const swatches = [
     textColor: '000000',
   },
   {
+    slug: 'cloud',
     name: 'Cloud',
     hex: 'FAFAFA',
     rgb: {
@@ -116,6 +126,7 @@ const swatches = [
     textColor: '000000',
   },
   {
+    slug: 'mist',
     name: 'Mist',
     hex: 'EDEDED',
     rgb: {
@@ -127,6 +138,7 @@ const swatches = [
     textColor: '000000',
   },
   {
+    slug: 'fog',
     name: 'Fog',
     hex: '999999',
     rgb: {
@@ -138,6 +150,7 @@ const swatches = [
     textColor: '000000',
   },
   {
+    slug: 'steam',
     name: 'Steam',
     hex: '666666',
     rgb: {
@@ -149,6 +162,7 @@ const swatches = [
     textColor: 'FFFFFF',
   },
   {
+    slug: 'smoke',
     name: 'Smoke',
     hex: '333333',
     rgb: {
@@ -160,6 +174,7 @@ const swatches = [
     textColor: 'FAFAFA',
   },
   {
+    slug: 'night',
     name: 'Night',
     hex: '202020',
     rgb: {
@@ -171,6 +186,7 @@ const swatches = [
     textColor: 'FAFAFA',
   },
   {
+    slug: 'black',
     name: 'Black',
     hex: '000000',
     rgb: {
@@ -184,13 +200,13 @@ const swatches = [
 ];
 
 const Color = () => {
-  return <>
+  return <section>
     <h2>Color</h2>
     <p>Use of a common color palette creates a sense of unity and familiarity. This color palette is minimal, friendly, and flexible for a variety of projects.</p>
     <ul className={styles.swatchList}>
       {swatches.map((swatch) => <ColorSwatch {...swatch} key={swatch.name} />)}
     </ul>
-  </>;
+  </section>;
 };
 
 export default Color;

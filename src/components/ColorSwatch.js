@@ -15,11 +15,12 @@ const ColorSwatch = (props) => {
     hex,
     rgb,
     variable,
-    textColor
+    textColor,
+    slug,
   } = props;
 
   return <li className={styles.colorSwatch}>
-    <div className={styles.colorExample} style={{color: '#' + hex, backgroundColor: '#' + hex}}></div>
+    <div className={styles.colorExample} style={{ backgroundColor: 'var(--' + slug + ', #' + hex + ')' }}></div>
     <div className={styles.swatchInfo}>
       <h3>{name}</h3>
       <table className={styles.swatchTable}>
