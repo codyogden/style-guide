@@ -7,12 +7,14 @@
   height: 64px;
   width: 100%;
   box-sizing: border-box;
-  transition: all 200ms 150ms linear;
+  transition: all 200ms linear;
+  transition-delay: 0ms;
   padding-top: 32px;
   position: absolute;
   top: 0;
   &:hover {
     height: 100%;
+    transition-delay: 150ms;
   }
 }
 
