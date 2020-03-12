@@ -1,0 +1,8 @@
+@use '../variables';
+.InterFamily {
+  font-family: variables.$fontInter;
+}
+
+.PermanentMarkerFamily {
+  font-family: variables.$fontDisplay;
+}

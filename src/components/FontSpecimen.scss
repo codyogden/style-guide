@@ -1,0 +1,30 @@
+@use '../variables';
+.specimenGroup {
+  width: variables.$content-width;
+  max-width: 95%;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: repeat(22, 1fr);
+  row-gap: 10px;
+}
+
+.character {
+  text-align: center;
+  letter-spacing: 4px;
+  display: inline-block;
+}
+
+
+.title {
+  font-size: 6em;
+  width: variables.$content-width;
+  max-width: 95%;
+  margin: 0.5em auto;
+  margin-bottom: 0;
+  line-height: 1;
+  & + p {
+    margin-top: 0;
+  }
+}
