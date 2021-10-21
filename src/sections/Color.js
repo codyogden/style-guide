@@ -11,8 +11,8 @@ const swatches = [
     hex: '1F8DD6',
     rgb: {
       r: 31,
-      b: 141,
-      g: 214,
+      g: 141,
+      b: 214,
     },
     variable: '$color-water',
     textColor: 'FFFFFF',
